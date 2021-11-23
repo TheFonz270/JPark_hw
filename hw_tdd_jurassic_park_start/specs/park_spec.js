@@ -69,6 +69,9 @@ describe('Park', function() {
     assert.strictEqual(actual, 8395000)
   });
 
-  it('should be able to calculate total revenue for one year');
+  it('should be able to calculate total revenue for one year', function () {
+    actual = jPark.yearlyRevenue();
+    assert.strictEqual(actual, 419750000)
+  });
 
 });
